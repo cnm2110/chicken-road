@@ -8,4 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.scene
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/555.scene
+    guid: 17fcc5ee960cca943bc579e279497281
+  - enabled: 1
+    path: "Assets/\u5F00\u59CB\u754C\u9762.scene"
+    guid: 6a609ab424bb05641b917690fef636e8
+  m_BuildProfiles: []
   m_configObjects: {}
+  m_SlimFeaturesWeixinMiniGame:
+    ACLDecompression: 0
+    AllocateOverhead: 1
+    DecompressASTC: 0
+    DecompressDXT: 0
+    DecompressETC: 1
+    FreeTypeSfntPng: 1
+    LightProbe: 2
+    RootMotion: 0
+    UseStringInternPool: 2
