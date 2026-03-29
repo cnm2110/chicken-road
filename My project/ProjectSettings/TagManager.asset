@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Obstacle
+  - "\u8840\u6761"
   layers:
   - Default
   - TransparentFX
