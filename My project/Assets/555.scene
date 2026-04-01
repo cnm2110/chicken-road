@@ -277,7 +277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 33dccf83b7f7f294992c97ebe1990464, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1113,6 +1113,7 @@ GameObject:
   - component: {fileID: 336351694}
   - component: {fileID: 336351693}
   - component: {fileID: 336351695}
+  - component: {fileID: 336351696}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: g12730
@@ -1237,6 +1238,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.76, y: 1.05}
   m_EdgeRadius: 0
+--- !u!114 &336351696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336351692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e133495edfab4b542ac5a9de673466c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnTime: 1
+  coinText: {fileID: 0}
 --- !u!1 &341566745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315, y: 34.479}
+  m_AnchoredPosition: {x: -338.1, y: 58.9}
   m_SizeDelta: {x: 549.0403, y: 588.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341566747
@@ -1476,7 +1491,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bbf155d7a10a6f74483fdc5ddbfb9692, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 735b2d78f5ecfea408a46940cf755553, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -1950,6 +1965,7 @@ GameObject:
   - component: {fileID: 660095250}
   - component: {fileID: 660095249}
   - component: {fileID: 660095251}
+  - component: {fileID: 660095252}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: g15838
@@ -2074,6 +2090,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9, y: 1.04}
   m_EdgeRadius: 0
+--- !u!114 &660095252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660095248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e133495edfab4b542ac5a9de673466c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnTime: 0.1
+  coinText: {fileID: 1480659479}
 --- !u!1 &764258598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,6 +2115,7 @@ GameObject:
   - component: {fileID: 764258600}
   - component: {fileID: 764258599}
   - component: {fileID: 764258601}
+  - component: {fileID: 764258602}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: g16188
@@ -2209,6 +2240,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.91, y: 0.95}
   m_EdgeRadius: 0
+--- !u!114 &764258602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764258598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e133495edfab4b542ac5a9de673466c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnTime: 1
+  coinText: {fileID: 0}
 --- !u!1 &861799929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,15 +2568,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 33dccf83b7f7f294992c97ebe1990464, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4646,12 +4691,11 @@ GameObject:
   - component: {fileID: 1828485537}
   - component: {fileID: 1828485539}
   - component: {fileID: 1828485540}
-  - component: {fileID: 1828485541}
   - component: {fileID: 1828485542}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: "\u30CB\u30EF\u30C8\u30EA"
-  m_TagString: player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4840,19 +4884,6 @@ MonoBehaviour:
   speed: 5
   endX: 110.5
   startX: -20.4
---- !u!114 &1828485541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828485533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ff81372308fc44a25116d8b932c55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinText: {fileID: 1480659479}
 --- !u!114 &1828485542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5343,8 +5374,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280953386
+  m_fontColor: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5356,13 +5387,13 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 2194
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
