@@ -282,7 +282,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.01
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -834,7 +834,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -853,6 +853,7 @@ MonoBehaviour:
   maxHealth: 100
   healthSlider: {fileID: 303580075}
   invincibilityDuration: 1
+  healthText: {fileID: 0}
 --- !u!114 &303580078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -325.15482, y: 34.479}
+  m_AnchoredPosition: {x: -315, y: 34.479}
   m_SizeDelta: {x: 549.0403, y: 588.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341566747
@@ -4867,6 +4868,7 @@ MonoBehaviour:
   maxHealth: 100
   healthSlider: {fileID: 303580075}
   invincibilityDuration: 1
+  healthText: {fileID: 1936430948}
 --- !u!1 &1830726218
 GameObject:
   m_ObjectHideFlags: 0

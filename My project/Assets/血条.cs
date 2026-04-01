@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
@@ -19,9 +20,10 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
         if (healthSlider != null)
         {
-            healthSlider.maxValue = maxHealth;
-            healthSlider.value = currentHealth;
+            healthSlider.maxValue = maxHealth; // 或 1f，根据你的选择
+            healthSlider.value = currentHealth; // 或 currentHealth/maxHealth
         }
+        UpdateHealthUI();
     }
 
     void Update()
@@ -92,9 +94,19 @@ public class Health : MonoBehaviour
     // 更新血条显示
     private void UpdateHealthUI()
     {
-        if (healthSlider != null)
+        // 更新血条（Slider 或 Image）
+         if (healthSlider != null)
         {
+            healthSlider.maxValue = maxHealth;   // 保证范围正确（可选，但建议保留）
             healthSlider.value = currentHealth;
+        }
+
+        // 更新文本（根据你的需求选择格式）
+        if (healthText != null)
+        {
+            // 格式1：显示 "80/100"
+            healthText.text = $"{currentHealth}/{maxHealth}";
+            
         }
     }
 
@@ -105,4 +117,7 @@ public class Health : MonoBehaviour
         // 这里可以添加死亡动画、重新开始场景等逻辑
         Destroy(gameObject);
     }
+
+    [Header("UI 文本")]
+    public TextMeshProUGUI healthText;
 }
