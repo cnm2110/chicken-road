@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Coin
+  - Undefined
   - Obstacle
   - "\u8840\u6761"
-  - player
+  - Coin
   - shop
   layers:
   - Default
@@ -45,10 +45,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: New Layer 1
-    uniqueID: 1057076807
-    locked: 0
-  - name: New Layer 2
-    uniqueID: 249282363
     locked: 0
