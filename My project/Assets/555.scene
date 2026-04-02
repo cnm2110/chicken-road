@@ -1115,7 +1115,7 @@ GameObject:
   - component: {fileID: 336351695}
   m_Layer: 0
   m_HasEditorInfo: 1
-  m_Name: g12730
+  m_Name: coin
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1313,6 +1313,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341566745}
   m_CullTransparentMesh: 1
+--- !u!1 &348484041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 348484043}
+  - component: {fileID: 348484042}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u53CD\u53CD\u590D\u590D\u70E6\u70E6\u70E6"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &348484042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348484041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2dc27ae01c4f84e8f884be37f22f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 336351692}
+  maxCoinCount: 5
+  spawnPerTime: 2
+  spawnAreaCenter: {x: 45, y: -1}
+  spawnAreaWidth: 135
+  spawnAreaHeight: 8
+  spawnInterval: 3
+  coinLifeTime: 10
+  minDistanceBetweenCoins: 1
+  maxSpawnAttempts: 10
+--- !u!4 &348484043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348484041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37, y: -74.1, z: -0.529358}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &392149015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +3056,7 @@ GameObject:
   - component: {fileID: 1293089017}
   - component: {fileID: 1293089016}
   - component: {fileID: 1293089015}
-  - component: {fileID: 1293089014}
+  - component: {fileID: 1293089018}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: "\u5FAE\u4FE1\u56FE\u7247_20260401093125_48_2"
@@ -3010,19 +3065,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1293089014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293089013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 619ee2754ade939429b31b9c6bed7054, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shelfObject: {fileID: 1027160375}
 --- !u!61 &1293089015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3139,6 +3181,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1293089018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293089013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11383e81eb403e468f5fc8e32b69bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelfObject: {fileID: 1027160375}
 --- !u!1 &1360259103
 GameObject:
   m_ObjectHideFlags: 0
@@ -4698,8 +4753,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1057076807
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f8a8bc52dcb31b54b97d5812117b7a88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -5804,5 +5859,6 @@ SceneRoots:
   - {fileID: 1429024935}
   - {fileID: 861799933}
   - {fileID: 1824749282}
-  - {fileID: 1027160379}
   - {fileID: 1293089017}
+  - {fileID: 1027160379}
+  - {fileID: 348484043}
